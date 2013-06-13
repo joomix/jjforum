@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+       <field name="catid" type="text" size="40" class="inputbox"
+                 label="COM_JJFORUM_FORM_LBL_POST_CATID" description="COM_JJFORUM_FORM_DESC_POST_CATID" 
+                
+                
+                filter="safehtml" /> 
+
+       <field name="user_id" type="text" size="40" class="inputbox"
+                 label="COM_JJFORUM_FORM_LBL_POST_USER_ID" description="COM_JJFORUM_FORM_DESC_POST_USER_ID" 
+                
+                
+                filter="safehtml" /> 
+
+       <field name="title" type="text" size="40" class="inputbox"
+                 label="COM_JJFORUM_FORM_LBL_POST_TITLE" description="COM_JJFORUM_FORM_DESC_POST_TITLE" 
+                
+                 required="true" 
+                filter="safehtml" /> 
+
+       <field name="text" type="textarea"
+                class="inputbox"
+                filter="safehtml"
+                 label="COM_JJFORUM_FORM_LBL_POST_TEXT" description="COM_JJFORUM_FORM_DESC_POST_TEXT"  /> 
+
+       <field name="tags" type="textarea"
+                class="inputbox"
+                filter="safehtml"
+                 label="COM_JJFORUM_FORM_LBL_POST_TAGS" description="COM_JJFORUM_FORM_DESC_POST_TAGS"  /> 
+
+		<field name="image" type="media" directory=""
+                hide_none="1" label="COM_JJFORUM_FORM_LBL_POST_IMAGE"
+                size="40"
+                description="COM_JJFORUM_FORM_DESC_POST_IMAGE" />
+                
+       <field name="votes" type="text" size="40" class="inputbox"
+                 label="COM_JJFORUM_FORM_LBL_POST_VOTES" description="COM_JJFORUM_FORM_DESC_POST_VOTES" 
+                filter="safehtml" /> 
+
+       <field name="created_date" type="calendar" class="inputbox"
+                 label="COM_JJFORUM_FORM_LBL_POST_CREATED_DATE" description="COM_JJFORUM_FORM_DESC_POST_CREATED_DATE" 
+                filter="safehtml" /> 
+
+       <field name="video_id" type="text" size="40" class="inputbox"
+                 label="COM_JJFORUM_FORM_LBL_POST_VIDEO_ID" description="COM_JJFORUM_FORM_DESC_POST_VIDEO_ID" 
+                filter="safehtml" /> 
+
+       <field name="video_provider" type="text" size="40" class="inputbox"
+                 label="COM_JJFORUM_FORM_LBL_POST_VIDEO_PROVIDER" description="COM_JJFORUM_FORM_DESC_POST_VIDEO_PROVIDER" 
+                filter="safehtml" /> 
+
+         <field
+                name="state"
+                type="list"
+                label="JSTATUS"
+                description="JFIELD_PUBLISHED_DESC"
+                class="inputbox"
+                size="1"
+                default="1">
+                <option value="1">JPUBLISHED</option>
+                <option value="0">JUNPUBLISHED</option>
+            </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+                <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

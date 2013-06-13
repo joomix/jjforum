@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	
+<!-- category parameters. -->
+	<fieldset name="basic" label="JGLOBAL_CATEGORY_OPTIONS">
+		<field name="theme" type="folderlist" default="default" hide_none="1" hide_default="1" label="Select theme" directory="components/com_jjforum/templates" filter="" exclude="" stripext="" />
+		<field name="show_category_title" type="list"
+			label="JGLOBAL_SHOW_CATEGORY_TITLE"
+			description="JGLOBAL_SHOW_CATEGORY_TITLE_DESC"
+		>
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field name="show_category_description" type="list"
+			description="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_DESC"
+			label="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_LABEL"
+		>
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field name="show_category_image" type="list"
+			description="JGLOBAL_SHOW_CATEGORY_IMAGE_DESC"
+			label="JGLOBAL_SHOW_CATEGORY_IMAGE_LABEL"
+		>
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field name="show_empty_categories" type="list"
+			label="show empty categories"
+			description=""
+		>
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field name="show_cat_num_posts" type="list"
+			label="Count number of post per category"
+			description=""
+		>
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+	</fieldset>
+<!-- post parameters. -->
+	<fieldset name="posts" label="Post attributes">
+				<field name="show_title" type="list"
+					description="JGLOBAL_SHOW_TITLE_DESC"
+					label="JGLOBAL_SHOW_TITLE_LABEL"
+				>
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+	
+				<field name="show_editor" type="list"
+					description=""
+					label="Use Editor"
+				>
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+	
+				<field name="show_image" type="list"
+					description=""
+					label="show image"
+				>
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+	
+				<field name="show_video" type="list"
+					description=""
+					label="show video"
+				>
+					<option value="lightbox">In lightbox</option>
+					<option value="inline">Inline</option>
+					<option value="0">JHIDE</option>
+				</field>
+	
+				<field name="show_intro_tip" type="list"
+					description=""
+					label="show intro tip"
+				>
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>								
+	
+				<field name="show_create_date" type="list"
+					description="JGLOBAL_SHOW_CREATE_DATE_DESC"
+					label="JGLOBAL_SHOW_CREATE_DATE_LABEL"
+				>
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+
+				<field name="date_format" type="list"
+					description="Based on the default language file"
+					label="Choose date format"
+				>
+					<option value="DATE_FORMAT_LC2">l, d F Y H:i</option>
+					<option value="DATE_FORMAT_LC">l, d F Y</option>
+					<option value="DATE_FORMAT_LC1">l, d F Y</option>
+					<option value="DATE_FORMAT_LC3">d F Y</option>
+					<option value="DATE_FORMAT_LC4">Y-m-d</option>
+					<option value="DATE_FORMAT_LC5">y-m-d</option>
+				</field>
+	
+				<field
+				name="show_votes" type="list"
+				label="JGLOBAL_SHOW_VOTE_LABEL"
+				description="JGLOBAL_SHOW_VOTE_DESC"
+				>
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">JHIDE</option>
+					<option	value="1">JSHOW</option>
+				</field>
+	
+				<field name="show_icons" type="list"
+					description="JGLOBAL_SHOW_ICONS_DESC"
+					label="JGLOBAL_SHOW_ICONS_LABEL"
+				>
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+	
+				<field name="show_sharethis_icon" type="list"
+					description="JGLOBAL_SHOW_EMAIL_ICON_DESC"
+					label="JGLOBAL_SHOW_EMAIL_ICON_LABEL"
+				>
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+	</fieldset>
+
+	<fieldset name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+
+		<field name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			validate="rules"
+			filter="rules"
+			component="com_contact"
+			section="component" />
+	</fieldset>
+
+</config>
